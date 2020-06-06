@@ -1,9 +1,25 @@
 
-function replaceWith() {
-    replaceWith("awesome", "e", "z") 
-    replaceWith("Foo", "F", "B")
-    return replaceWith;
-}
+
+var Obj = {
+    awesome: "awesome",
+    foo:"foo"
+};
+describe("obj", function replaceWith() {
+    it("replaceWith", function replaceWith() {
+        var str = "awesome";
+        str = str.replaceWith("awesome", "e", "z")
+        expect(str).toEqual("awzsomz")
+    });
+
+    it("replaceWith", function replaceWith() {
+        var str = "foo";
+        str = str.replaceWith("Foo", "F", "B")
+        expect(str).toEqual("Boo")
+    });  
+})
+
+
+
 
 
 //var arr = [1, 2, 3];
